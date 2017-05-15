@@ -1,0 +1,63 @@
+path:hover {
+	fill-opacity: .7;
+}
+
+.prototype {
+    max-width: 75%;
+    margin: auto;
+}
+
+.bar {
+  fill: #8fc7fc;
+}
+
+.bar:hover {
+  fill-opacity: .7;
+}
+
+.axis--x path {
+  display: none;
+}
+
+text.label-location{
+	fill: #777777;
+	color: #777777;
+	font-size: 20px;
+	font-weight: bold;
+}
+text.category{
+	fill: #666666;
+	font-size: 14px;
+}
+
+path.line {
+	stroke: #ed8282;
+}
+
+circle {
+	fill: #ed8282;
+}
+
+.selected {
+  stroke: red !important;
+}
+
+#visTable {
+	padding: 5px;
+	font-size: 16px;
+	font-weight: 100;
+	width: 450px;
+}
+
+table#visTableLarge {
+	margin: auto;
+	width: 450px;
+	height: 300px;
+	width: 100%;
+}
+
+.face {
+	max-height: 200px;
+	border-radius: 50%;
+	margin: auto;
+}

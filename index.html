@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Healthcare Breaches</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/vis.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+
+<body>
+
+	<!-- Header -->
+	<section id="header">
+		<div class="inner">
+			<span class="icon major fa-hospital-o"></span>
+			<h1>Healthcare Data Breaches</h1>
+			<p>A closer look into some of the largest healthcare security breaches in the past 10 years</p>
+			<ul class="actions">
+				<li><a href="#one" class="button scrolly">Discover</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- One -->
+	<section id="one" class="main style1">
+		<div class="container">
+			<div class="row 150%">
+				<div class="12u 12u$(medium)">
+					<header class="major">
+						<h2>What is my dataset?</h2>
+					</header>
+					<p>When a HIPAA covered organization experiences a data breach that affects more than 500 individuals, Section 13407e of the HITECH (Health Information Technology for Economic and Clinical Health) act requires that entity to provide notification of
+						the breach to the Department of Health and Human Services. The Secretary makes this information available on a public web page. The data can be viewed either on the web page or in file form via a download
+						<a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf">here</a>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="one" class="main style1">
+		<div class="container">
+			<div class="row 150%">
+				<div class="12u 12u$(medium)">
+					<header class="major">
+						<h2>What was my motivation?</h2>
+					</header>
+					<p>I decided to choose this dataset because of the the relevance that the topic of data breaches has in today’s news. Every other week or so, it seems like there’s another hack, another phishing scam, or another data leak of people’s credit card and Social
+					Security Numbers. To me this dataset seemed like a great look into really just a subset of those data breaches, breaches in the field of healthcare.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Two -->
+	<section id="two" class="main style1">
+		<div class="container">
+			<div class="row 150%">
+				<div class="12u 12u$(medium)">
+					<h2>Column Descriptions</h2>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<td>Name</td>
+									<td>Description</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Name_of_Covered_Entity</td>
+									<td>name of the entity experiencing the breach</td>
+								</tr>
+								<tr>
+									<td>State</td>
+									<td>2-letter code of the state where the breach occurred</td>
+								</tr>
+								<tr>
+									<td>Individuals_Affected</td>
+									<td>number of humans whose records were compromised in the breach</td>
+								</tr>
+								<tr>
+									<td>Date_of_Breach</td>
+									<td>vector giving the date or date range of the breach</td>
+								</tr>
+								<tr>
+									<td>Type_of_Breach</td>
+									<td>type of breach (e.g., "Theft" vs., "Unauthorized Access/Disclosure", etc.)</td>
+								</tr>
+								<tr>
+									<td>Location_of_Breached_Information</td>
+									<td>location from which the breach occurred (e.g., "Paper", "Laptop", etc.)</td>
+								</tr>
+								<tr>
+									<td>Date_Posted_or_Updated</td>
+									<td>Date the information was posted to the HHS data base or last updated</td>
+								</tr>
+								<tr>
+									<td>breach_start</td>
+									<td>Date of the start of the incident</td>
+								</tr>
+								<tr>
+									<td>breach_end</td>
+									<td>Date of the end of the incident</td>
+								</tr>
+								<tr>
+									<td>Year</td>
+									<td>Year of the incident</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Three -->
+	<section id="three" class="main style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>Tableau Prototype</h2>
+			</header>
+			<div class="row 150%">
+				<div class="12u 12u$(medium)">
+					<img class="image prototype" src="images/dashboard1.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Four -->
+	<section id="four" class="main style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>d3 Visualization</h2>
+			</header>
+			<div class="row">
+				<h4>Click on a state to see more info</h4>
+			</div>
+			<div class="row 150%">
+				<svg id="vis" height=400 width=600 />
+				<svg id="vis2" height=300 width=450 />
+			</div>
+			<br />
+			<div class="row 150%">
+				<svg id="vis3" height=400 width=600 />
+				<svg id="vis4" height=300 width=450 />
+			</div>
+		</div>
+	</section>
+
+	<section id="four" class="main style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>Findings:</h2>
+			</header>
+			<div class="row">
+				<p>When I hear of a data breach, the first thing that comes to my mind is a hacker sitting in his basement working to find vulnerabilities in a corporation's systems,
+				and exploiting them for his own gain. The story that this data tells however, is very different. The number of people affected is huge; in one incident alone, almost
+				5 million people were affected. However, the most common location or breached data wasn't on a laptop, or some secure server. More often than not, data breaches happened when
+				people left paperwork lying around, or when someone accidentally left a laptop on public transportation. One of the most common types of breaches was "Loss", and that's just
+				the result of employee's negligence, not some ace hacker. Data breaches are a real problem, and measures need to be put in place so that people's sensitive information isn't
+				leaked due to one person's mistake.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="four" class="main style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>About Me</h2>
+			</header>
+			<img class="face fit" src="images/face.jpg" />
+			<div class="row">
+				<p>
+				Hi, my name is Gilbert. I am currently a senior studying Computer Science at the University of San Francisco. I usually code in Java, and hope to be a backend developer coming out of college.
+				As for hobbies, I watch a lot of TV shows, play tennis, and I enjoy going to the movies. Right now, I'm in the middle of Sense8 (a 10/10 show), and waiting for House of Cards to finally come out.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section id="footer">
+		<ul class="icons">
+			<li><a href="https://github.com/gchan5" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="mailto:gilbertchan.contact@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+			<li><a href="https://www.linkedin.com/in/gilbertchan1/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Gilbert Chan</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+	<script src="states.js"></script>
+</body>
+
+</html>
