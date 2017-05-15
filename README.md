@@ -1,12 +1,6 @@
-# CS 360 Homework
+# Healthcare Data Breaches
 
-The GitHub Pages website associated with your homework repository will be available at:
-
-```
-https://usf-cs360-2017.github.io/project-gchan5
-```
-
-Replace `#` with the homework number and `username` with your **Github** username. This is the link you should submit in Canvas.
+A site made to showcase some data visualizations based on a dataset provided by the US HHS department.
 
 # Template Info
 
